@@ -15,7 +15,6 @@ class DetailViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var startButton: UIBarButtonItem!
     
     override func viewDidLoad() {

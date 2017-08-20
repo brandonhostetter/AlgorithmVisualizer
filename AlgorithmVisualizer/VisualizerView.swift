@@ -24,7 +24,7 @@ extension MutableCollection where Indices.Iterator.Element == Index {
 }
 
 class VisualizerView: UIView {
-    let count = 20
+    let count = 19
     let spacing = 2
     var algorithmType: String?
     var numbers: [CGFloat] = []
@@ -76,11 +76,13 @@ class VisualizerView: UIView {
                 self.sorter = InsertionSort()
                 break
             case Algorithm.MergeSort["key"]!:
+                self.sorter = MergeSort()
                 break
             case Algorithm.Quicksort["key"]!:
                 self.sorter = QuickSort()
                 break
             case Algorithm.RadixSort["key"]!:
+                self.sorter = RadixSort()
                 break
             case Algorithm.SelectionSort["key"]!:
                 self.sorter = SelectionSort()
